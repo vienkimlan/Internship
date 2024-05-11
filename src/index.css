@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="file"]::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+.boxed-wrap {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+}
+
+.boxed-wrap-blue {
+  border-image-source: linear-gradient(to left, #22d3ee, #60a5fa);
+}
+
+.boxed-wrap-blue:hover {
+  border-image-source: linear-gradient(to left, #60a5fa, #22d3ee);
+}
+
+.text-between {
+  font-size: 2.75rem;
+  line-height: 1;
+}
+
+textblue {
+  color: blue;
+}
+
+.menu-item {
+    margin: 0;
+    padding-top: 1em;
+    color: #94a3b8;
+}
+
+.menu-item:hover {
+  color: #172554;
+  cursor: pointer;
+}
+
+.contact-links {
+  display: flex;
+  width: 100%;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-out;
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 0.5rem;
+  border-radius: 2px;
+}
+
+hr {
+  width: 80%;
+}
+
+.footer__footer {
+    border-top: 1px solid #DCDCDC;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.square {
+  border: solid;
+  padding: 3px;
+  width: 33px;
+  height: 33px;
+}
+
+@media (min-width: 640px) {
+  .contact-links {
+    justify-content: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact-links {
+    justify-content: right;
+  }
+}
